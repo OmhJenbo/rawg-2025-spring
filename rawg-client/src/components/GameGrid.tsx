@@ -12,9 +12,7 @@ interface props {
 const GameGrid = ({selectedGenre }: props) => {
   const skeletons = [...Array(20).keys()];
 
-  console.log(selectedGenre);
-
-  const { data: games, error, isLoading } = useGames();
+  const { data: games, error, isLoading } = useGames(selectedGenre);
 
   return (
     <>
