@@ -8,7 +8,6 @@ interface Props {
 }
 
 const PlatformSelector = ({selectedPlatform, onSelectedPlatform}: Props) => {
-
 const { data: parent_platforms, error } = usePlatforms();
 
 if (error) {
